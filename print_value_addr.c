@@ -6,6 +6,7 @@
 
 #include <stdio.h>
 #define SIZE 8
+#define BAD_INPUT_ERR -1
 
 int main()
 {
@@ -17,14 +18,22 @@ int main()
     printf("Enter %d nums\n", SIZE);
     for (i = 0; i < SIZE; ++i)
     {
-        scanf("%d", &arr[i]);
+        if (scanf("%d", &arr[i]) != 1)
+        {
+            printf("bad input\n");
+            return BAD_INPUT_ERR;
+        }
     }
 
     /*get all chars*/
     printf("Enter %d chars\n", SIZE);
     for (i = 0; i < SIZE; ++i)
     {
-        scanf(" %c", &str[i]);
+        if (scanf(" %c", &str[i]) != 1)
+        {
+            printf("bad input\n");
+            return BAD_INPUT_ERR;
+        }
     }
 
     printf("-----INTS-----\n");
