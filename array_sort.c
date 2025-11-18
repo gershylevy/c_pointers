@@ -1,6 +1,6 @@
 /*------------------------------------------------------
-* Filename: print_value_addr.c
-* Description: Print values and addresses of arrays.
+* Filename: array_sort.c
+* Description: Sorts arrays with pointers.
 * Author: Gershon Levy
 -------------------------------------------------------*/
 
