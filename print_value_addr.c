@@ -31,14 +31,14 @@ int main()
     for (i = 0; i < SIZE; ++i)
     {
         /*print the ints using []*/
-        printf("Value: %d\tAddress: %p\n", arr[i], &arr[i]);
+        printf("Value: %d\tAddress: %x\n", arr[i], &arr[i]);
     }
 
     printf("-----CHARS-----\n");
     for (i = 0; i < SIZE; ++i)
     {
         /*print the chars using * */
-        printf("Value: %c\tAddress: %p\n", *(str + i), &(*(str + i)));
+        printf("Value: %c\tAddress: %x\n", *(str + i), &(*(str + i)));
     }
 
     return 0;
